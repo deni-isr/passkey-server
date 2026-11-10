@@ -1,6 +1,6 @@
 import express, {Request, Response} from 'express';
 import {MessageResponse} from '../types/Messages';
-import passkeyRoute from './routes/passkeyRoute';
+import passkeyRouter from './routes/passkeyRoute';
 
 const router = express.Router();
 
@@ -10,6 +10,6 @@ router.get<{}, MessageResponse>('/', (_req: Request, res: Response) => {
   });
 });
 
-router.use('/auth', passkeyRoute);
+router.use('/passkey', passkeyRouter);
 
 export default router;

@@ -8,9 +8,9 @@ import {
 
 const router = express.Router();
 
-router.route('/setup').post(setupPasskey); // register
-router.route('/verify').post(verifyPasskey); // verify registration
-router.route('/login-setup').post(authenticationOptions); // login setup
-router.route('/login-verify').post(verifyAuthentication); // login
+router.route('/setup').post(setupPasskey);
+router.route('/verify').post(verifyPasskey);
+router.route('/login-setup').post(authenticationOptions);
+router.route('/login-verify').post(verifyAuthentication);
 
 export default router;
